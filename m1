@@ -1,0 +1,9 @@
+-- hosts: all
+tasks:
+
+   - name: installing packages
+      yum: name=httpd state=present
+   - name: starting httpd
+      yum: name=httpd state=started
+   - name: installing git
+      yum: name=git state=present
